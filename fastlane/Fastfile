@@ -1,0 +1,32 @@
+# More documentation about how to customize your build
+# can be found here:
+# https://docs.fastlane.tools
+fastlane_version "1.109.0"
+
+# This value helps us track success metrics for Fastfiles
+# we automatically generate. Feel free to remove this line
+# once you get things running smoothly!
+generated_fastfile_id "2b258c8b-ac35-4254-9c11-1815af797aac"
+
+default_platform :ios
+
+platform :ios do
+  desc "Submit a new Build to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :alpha do
+    sigh
+    increment_build_number(xcodeproj: './ios/RecordingSample.xcodeproj') # Increment the build number
+    gym(scheme: "RecordingSample", project: './ios/RecordingSample.xcodeproj') # Build the app
+    pilot(skip_waiting_for_build_processing: true) # Upload the app to TestFlight
+  end
+end
+
+platform :android do
+
+  desc "Submit a new Alpha Build to Play Store"
+  lane :alpha do
+    gradle(task: 'clean', project_dir: "android/") # Clean the Gradle project
+    gradle(task: "assemble", build_type: "Release", project_dir: "android/") # Build the Release APK
+    supply(track: "alpha", apk: "android/app/build/outputs/apk/app-release.apk") # Upload the APK to the Play Store (alpha)
+  end
+end

@@ -1,0 +1,8 @@
+# iOS
+app_identifier "com.demo.recording" # The bundle identifier of your app
+apple_id "your_apple_id" # Your Apple email address
+team_id "your_team_id"  # Developer Portal Team ID
+
+# Android
+json_key_file "../android/debug.keystore.properties" # Path to the json secret file - Follow https://github.com/fastlane/supply#setup to get one
+package_name "com.fable.recorder" # Your Android app package

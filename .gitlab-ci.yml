@@ -1,0 +1,25 @@
+image: node:7.1.0
+
+stages:
+  - build
+
+cache:
+  paths:
+  - node_modules/
+
+before_script:
+  - npm install
+
+check-lint:
+  stage: build
+  script:
+    - npm run lint
+
+# deploy-testflight:
+#  stage: deploy
+#  script:
+#    - npm run build:alpha:ios
+#  only:
+#    - staging
+#  allow_failure: true # for downstream failure
+#  when: on_success

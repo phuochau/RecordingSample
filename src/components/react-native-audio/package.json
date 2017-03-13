@@ -1,0 +1,98 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-audio",
+        "scope": null,
+        "escapedName": "react-native-audio",
+        "name": "react-native-audio",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Volumes/DATA/Freelance/Fable"
+    ]
+  ],
+  "_from": "react-native-audio@latest",
+  "_id": "react-native-audio@3.2.1",
+  "_inCache": true,
+  "_location": "/react-native-audio",
+  "_nodeVersion": "5.8.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/react-native-audio-3.2.1.tgz_1485605008951_0.07218175893649459"
+  },
+  "_npmUser": {
+    "name": "jsierles",
+    "email": "joshua@diluvia.net"
+  },
+  "_npmVersion": "4.0.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-audio",
+    "scope": null,
+    "escapedName": "react-native-audio",
+    "name": "react-native-audio",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-audio/-/react-native-audio-3.2.1.tgz",
+  "_shasum": "13b518f7c26f806ae8df0d0123a2115827ce78fa",
+  "_shrinkwrap": null,
+  "_spec": "react-native-audio",
+  "_where": "/Volumes/DATA/Freelance/Fable",
+  "author": {
+    "name": "Joshua Sierles",
+    "email": "joshua@diluvia.net",
+    "url": "https://github.com/jsierles"
+  },
+  "bugs": {
+    "url": "https://github.com/jsierles/react-native-audio/issues"
+  },
+  "dependencies": {},
+  "description": "React Native extension for recording audio",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "13b518f7c26f806ae8df0d0123a2115827ce78fa",
+    "tarball": "https://registry.npmjs.org/react-native-audio/-/react-native-audio-3.2.1.tgz"
+  },
+  "files": [
+    "ios/AudioRecorderManager.m",
+    "ios/AudioRecorderManager.h",
+    "ios/RNAudio.xcodeproj",
+    "README.md",
+    "LICENSE",
+    "index.js",
+    "android/*"
+  ],
+  "gitHead": "8309e7b3deb52b8440160c7e0aa04c384d4226ae",
+  "homepage": "https://github.com/jsierles/react-native-audio#readme",
+  "keywords": [
+    "react-native",
+    "audio",
+    "record"
+  ],
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "jsierles",
+      "email": "joshua@diluvia.net"
+    }
+  ],
+  "name": "react-native-audio",
+  "nativePackage": true,
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jsierles/react-native-audio.git"
+  },
+  "scripts": {},
+  "version": "3.2.1"
+}
