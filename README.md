@@ -1,5 +1,5 @@
 #  Sample Recording App With React Native
-Inspired from [react-native-audio](https://github.com/jsierles/react-native-audio/)
+Use [react-native-audio](https://github.com/jsierles/react-native-audio/) for recording but modify some native iOS code to support resume on iOS.
 
 ## Features
 - Start/Stop Record
